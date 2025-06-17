@@ -16,7 +16,7 @@
     <main class="container">
         <h1>Buscador de Receitas</h1>
         <form class="search-form">
-            <input type="text" placeholder="Digite o ingrediente" class="search-input">
+            <input type="text" placeholder="Digite o ingrediente (Obs: deve ser em inglês)" class="search-input">
             <button class="search-button" type="submit">Buscar</button>
         </form>
         <div class="loading"></div>
@@ -30,7 +30,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement(
                 {
-                    pageLanguage: 'pt', // Idioma original do site: Português
+                    pageLanguage: 'pt', 
                     layout: google.translate.TranslateElement.InlineLayout.SIMPLE 
                 }, 
                 'google_translate_element'
